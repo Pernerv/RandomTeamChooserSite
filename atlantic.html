@@ -1,0 +1,70 @@
+<h1><center>Click the button to roll a team:</center></h1>
+<center><button onclick = randomNumber()>Randomizer</button></center>
+<h4>Conference: East</h4>
+<h4>Division: Atlantic</h4> 
+<p id = "p1"><!--this is where the team text will be located--></p>
+
+<br></br>
+<button><a href = "./divisionEast.html">Back</a></button>
+<script>
+  function randomNumber(){
+    var philly = "You rolled the Philadelphia 76ers!";
+    var celts = "You rolled the Boston Celtics!";
+    var nets = "You rolled the Brooklyn Nets!";
+    var knicks = "You rolled the New York Knicks!";
+    var raps = "You rolled the Toronto Raptors!";
+    var x = Math.floor(Math.random() * 5);
+    if(x == 0){
+      const para = document.getElementById("p1");
+      para.innerHTML = philly;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Philadelphia, Pennsylvania.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 1){
+      const para = document.getElementById("p1");
+      para.innerHTML = celts;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Boston, Massachusetts.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+      para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 17         times!")));
+    }
+    if(x == 2){
+      const para = document.getElementById("p1");
+      para.innerHTML = nets;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in New York, New York.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 3){
+      const para = document.getElementById("p1");
+      para.innerHTML = knicks;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in New York, New York.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 4){
+      const para = document.getElementById("p1");
+      para.innerHTML = raps;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Toronto, Canada.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+  }
+  
+</script>

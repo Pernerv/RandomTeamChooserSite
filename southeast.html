@@ -1,0 +1,72 @@
+<h1><center>Click the button to roll a team:</center></h1>
+<center><button onclick = randomNumber()>Randomizer</button></center>
+<h4>Conference: East</h4>
+<h4>Division: South East</h4>
+<p id = "p1"><!--this is where the team text will be located--></p>
+
+<br></br>
+<br></br>
+<button><a href = "./divisionEast.html">Back</a></button>
+<script>
+  function randomNumber(){
+    var heat = "You rolled the Miami Heat!";
+    var horns = "You rolled the Charlotte Hornets!";
+    var hawks = "You rolled the Atlanta Hawks!";
+    var wiz = "You rolled the Washington Wizards!";
+    var majik = "You rolled the Orlando Magic!";
+    var x = Math.floor(Math.random() * 5);
+    if(x == 0){
+      const para = document.getElementById("p1");
+      para.innerHTML = heat;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Miami, Florida.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 3 times!")));
+    }
+    if(x == 1){
+      const para = document.getElementById("p1");
+      para.innerHTML = horns;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Charlotte, North Carolina.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 17 times!")));
+    }
+    if(x == 2){
+      const para = document.getElementById("p1");
+      para.innerHTML = hawks;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Atlanta, Georgia.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 3){
+      const para = document.getElementById("p1");
+      para.innerHTML = wiz;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Washington DC.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 4){
+      const para = document.getElementById("p1");
+      para.innerHTML = majik;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Orlando, Florida.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+  }
+  
+</script>

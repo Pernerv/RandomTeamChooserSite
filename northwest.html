@@ -1,0 +1,35 @@
+<h1><center>Click the button to roll a team:</center></h1>
+<center><button onclick = randomNumber()>Randomizer</button></center>
+<h4>Conference: West</h4>
+<h4>Division: North West</h4>
+<p id = "p1"><!--this is where the team text will be located--></p>
+
+<br></br>
+<br></br>
+<button><a href = "./divisionWest.html">Back</a></button>
+<script>
+  function randomNumber(){
+    var jazz = "You rolled the Utah Jazz!";
+    var nugs = "You rolled the Denver Nuggets!";
+    var wolves = "You rolled the Minnesota Timberwolves!";
+    var blaze = "You rolled the Portland Trail Blazers!";
+    var thunder = "You rolled the Oklahoma City Thunder!";
+    var x = Math.floor(Math.random() * 5);
+    if(x == 0){
+      document.getElementById("p1").innerHTML = jazz;
+    }
+    if(x == 1){
+      document.getElementById("p1").innerHTML = nugs;
+    }
+    if(x == 2){
+      document.getElementById("p1").innerHTML = wolves;
+    }
+    if(x == 3){
+      document.getElementById("p1").innerHTML = blaze;
+    }
+    if(x == 4){
+      document.getElementById("p1").innerHTML = thunder;
+    }
+  }
+  
+</script>

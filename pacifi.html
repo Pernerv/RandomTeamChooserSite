@@ -1,0 +1,70 @@
+<h1><center>Click the button to roll a team:</center></h1>
+<center><button onclick = randomNumber()>Randomizer</button></center>
+<h4>Conference: West</h4>
+<h4>Division: Pacific</h4>
+<p id = "p1"><!--this is where the team text will be located--></p>
+
+<br></br>
+<br></br>
+<button><a href = "./divisionWest.html">Back</a></button>
+<script>
+  function randomNumber(){
+    var suns = "You rolled the Pheonix Suns!";
+    var warriors = "You rolled the Golden State Warriors!";
+    var lakers = "You rolled the Los Angeles Lakers!";
+    var clippers = "You rolled the Los Angeles Clippers!";
+    var kings = "You rolled the Sacramento Kings!";
+    var x = Math.floor(Math.random() * 5);
+    if(x == 0){
+      const para = document.getElementById("p1");
+      para.innerHTML = suns;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Pheonix, Arizona.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 1){
+      const para = document.getElementById("p1");
+      para.innerHTML = warriors;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in San Francisco, California.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 2){
+      const para = document.getElementById("p1");
+      para.innerHTML = lakers;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is one of two based in Los Angeles, California.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 3){
+      const para = document.getElementById("p1");
+      para.innerHTML = clippers;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is one of two based in Los Angeles, California.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+    if(x == 4){
+      const para = document.getElementById("p1");
+      para.innerHTML = kings;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Sacramento, California.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+    }
+  }
+  
+</script>

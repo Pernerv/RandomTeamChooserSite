@@ -1,0 +1,75 @@
+<h1><center>Click the button to roll a team:</center></h1>
+<center><button onclick = randomNumber()>Randomizer</button></center>
+<h4>Conference: West</h4>
+<h4>Division: South West</h4>
+<p id = "p1"><!--this is where the team text will be located--></p>
+
+<br></br>
+<br></br>
+<button><a href = "./divisionWest.html">Back</a></button>
+<script>
+  function randomNumber(){
+    var griz = "You rolled the Memphis Grizzlies!";
+    var mavs = "You rolled the Dallas Mavericks!";
+    var pels = "You rolled the New Orleans Pelicans!";
+    var rocks = "You rolled the Houston Rockets!";
+    var spurs = "You rolled the San Antonio Spurs!";
+    var x = Math.floor(Math.random() * 5);
+    if(x == 0){
+      const para = document.getElementById("p1");
+      para.innerHTML = griz;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Memphis, Tennessee.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 0 times!")));
+    }
+    if(x == 1){
+      const para = document.getElementById("p1");
+      para.innerHTML = mavs;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Dallas, Texas.");
+      text.appendChild(textInner);
+      para.appendChild(text); 
+      para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 1 time!")));
+    }
+    if(x == 2){
+      const para = document.getElementById("p1");
+      para.innerHTML = pels;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in New Orleans, Louisiana.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 0 times!")));
+    }
+    if(x == 3){
+      const para = document.getElementById("p1");
+      para.innerHTML = rocks;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in Houston, Texas.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 2 times!")));
+    }
+    if(x == 4){
+      const para = document.getElementById("p1");
+      para.innerHTML = spurs;
+      const brek = document.createElement("br");
+      para.appendChild(brek);
+      const text = document.createElement("p");
+      const textInner = document.createTextNode("This team is based in San Antonio, Texas.");
+      text.appendChild(textInner);
+      para.appendChild(text);
+      para.appendChild(document.createElement("p").appendChild(document.createTextNode("They've won the championship 5          times!")));
+    }
+  }
+  
+</script>

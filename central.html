@@ -1,0 +1,34 @@
+<h1><center>Click the button to roll a team:</center></h1>
+<center><button onclick = randomNumber()>Randomizer</button></center>
+<h4>Conference: East</h4>
+<h4>Division: Central</h4>
+<p id = "p1"><!--this is where the team text will be located--></p>
+
+<br></br>
+<br></br>
+<button><a href = "./divisionEast.html">Back</a></button>
+<script>
+  function randomNumber(){
+    var bucks = "You rolled the Milwaukee Bucks!";
+    var bulls = "You rolled the Chicago Bulls!";
+    var cavs = "You rolled the Cleveland Cavaliers!";
+    var pacers = "You rolled the Indiana Pacers!";
+    var pistons = "You rolled the Detroit Pistons!";
+    var x = Math.floor(Math.random() * 5);
+    if(x == 0){
+      document.getElementById("p1").innerHTML = bucks;
+    }
+    if(x == 1){
+      document.getElementById("p1").innerHTML = bulls;
+    }
+    if(x == 2){
+      document.getElementById("p1").innerHTML = cavs;
+    }
+    if(x == 3){
+      document.getElementById("p1").innerHTML = pacers;
+    }
+    if(x == 4){
+      document.getElementById("p1").innerHTML = pistons;
+    }
+  }
+</script>
